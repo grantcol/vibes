@@ -1,0 +1,350 @@
+/* CSS declarations go here */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+html, body {
+	background-color: #eeeeee;
+}
+.fs_jumbo {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	margin: 0 auto;
+    padding: 10px;
+    background-image: url("img/ice_fallbg.jpg");
+    background-size: cover; 
+}
+
+.vibe-bar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.broadcast {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 80;
+}
+
+.mini-player {
+	display: none;
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 99;
+	color: #fff;
+}
+
+.search {
+	width: 50%;
+	position: relative;
+  	top: 30%;
+  	left: 50%;
+  	transform: translateY(-50%);
+  	transform: translateX(-50%);
+  	text-align: center;
+}
+
+.result_header {
+	width: 100%;
+	text-align: center;
+}
+
+.layout {
+	height: 100%;
+	/* to prevent the scrollbars from showing during an animation */
+	overflow: hidden;
+	width: 100%;
+}
+
+.page {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+#special {
+ 	padding-left: 50px;
+ 	padding-right: 50px;
+}
+
+/* to make sure the page being animated is on top */
+.velocity-animating {
+	z-index: 99;
+}
+
+#related_artists {
+	padding: 0;
+	padding-top: 10px;
+}
+
+#related_artists ul {
+	list-style-type: none;
+	margin: 0px;
+}
+
+.artist-page-header {
+	text-align: center;
+}
+
+.artist-page-banner {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 40px;
+	background-color: #fff;
+	padding : 40px;
+}
+
+.artist-page-img {
+	width: 		100%;
+}
+
+.artist-page-main {
+	background-color: #fff;
+}
+
+.artist-page-related li  {
+	margin-bottom: 10px;
+}
+
+.artist-page-related li p {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.artist-page-related li div {
+	display: inline-block;
+	margin-right: 10px;
+	max-width: 50px;
+	max-height: 50px;
+	vertical-align: middle;
+}
+
+.artist-page-related-img-wrap {
+	overflow: hidden;
+	width: 	50px;
+	border-radius: 	25px;
+	height:	50px;
+	background-size: cover;
+}
+
+.artist-page-img-wrap {
+	overflow: hidden;
+	width: 	230px;
+	border-radius: 	115px;
+	height:	230px;
+	background-size: cover;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.artist-page-album-thumb {
+	width: 100%;
+	height: auto;
+}
+
+.artist-page-title {
+	/*text-align: center;*/
+}
+
+p.weight1{
+	 font-family: "Source Sans Pro";
+	 font-weight: 200;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight2{
+	 font-family: "Source Sans Pro";
+	 font-weight: 200;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight3{
+	 font-family: "Source Sans Pro";
+	 font-weight: 300;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight4{
+	 font-family: "Source Sans Pro";
+	 font-weight: 300;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight5{
+	 font-family: "Source Sans Pro";
+	 font-weight: 400;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight6{
+	 font-family: "Source Sans Pro";
+	 font-weight: 400;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight7{
+	 font-family: "Source Sans Pro";
+	 font-weight: 600;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight8{
+	 font-family: "Source Sans Pro";
+	 font-weight: 600;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight9{
+	 font-family: "Source Sans Pro";
+	 font-weight: 700;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight10{
+	 font-family: "Source Sans Pro";
+	 font-weight: 700;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight11{
+	 font-family: "Source Sans Pro";
+	 font-weight: 900;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight12{
+	 font-family: "Source Sans Pro";
+	 font-weight: 900;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+h1{
+	 font-size: 64px;
+	 line-height: 73px;
+	 margin-bottom: 25px;
+}
+
+p{
+	 font-size: 17px;
+	 line-height: 26px;
+	 margin-bottom: 35px;
+}
+
+p.weights{
+	 letter-spacing: 2px;
+	 font-size: 13px;
+	 color: rgba(173,173,173,1);
+	 margin-bottom: 35px;
+	 border-width: 0px 0px 1px 0px;
+	 border-style: dotted;
+	 margin-top: 45px;
+}
+
+p.pullquote{
+	 font-size: 17px;
+	 line-height: 26px;
+	 margin-bottom: 35px;
+	 padding-left: 15px;
+	 border-width: 0px 0px 0px 3px;
+	 border-style: solid;
+}
+
+p.map{
+	 font-weight: 400;
+	 font-style: normal;
+	 margin-bottom: 0px;
+	 text-align: justify;
+	 font-size: 27px;
+	 line-height: 54px;
+	 margin-top: 0px;
+}
+
+p.heading{
+	 letter-spacing: 2px;
+	 font-size: 13px;
+	 margin-bottom: 35px;
+	 border-width: 0px 0px 1px 0px;
+	 border-style: dotted;
+	 margin-top: 45px;
+	 color: rgba(0,0,0,1);
+}
+
+p.intro{
+	 margin-bottom: 35px;
+	 font-size: 21px;
+	 line-height: 28px;
+}
+
+p.inverse-big{
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 padding: 30px;
+	 margin-bottom: 0px;
+}
+
+p.inverse-med{
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 padding: 30px;
+	 margin-bottom: 0px;
+	 padding-top: 0px;
+	 font-size: 15px;
+}
+
+p.inverse-small{
+	 padding-top: 0px;
+	 padding-left: 30px;
+	 padding-right: 30px;
+	 padding-bottom: 30px;
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 font-size: 13px;
+}
+
+p.inverse-heading{
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 padding: 30px;
+	 margin-bottom: 0px;
+	 padding-bottom: 0px;
+	 font-size: 15px;
+	 letter-spacing: 2px;
+	 margin-top: 50px;
+}
+

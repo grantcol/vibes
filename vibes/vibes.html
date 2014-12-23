@@ -1,0 +1,107 @@
+<head>
+  <title>Vibes</title>
+</head>
+
+<!--<body>
+{{> mini_player}}
+{{> layout}}
+<div id="content-container">
+	  {{> start_play}}
+</div>
+</body>-->
+
+<template name="layout">
+	<audio id="player"></audio>
+	<div class="layout" id="content-container">
+		{{> yield}}
+	</div>
+</template>
+
+<template name="startPlay">
+  <div class="page">
+  <div class="fs_jumbo">
+  	<div class="vibe-bar"><span style="font-size: 21px; font-weight: 300px; color: #fff;">VIBES</span></div>
+  	<div class="braodcast"><a href="#"><span class="glyphicon glyphicon-send" style="color: #fff;"></span></a></div>
+  	<div class="search">
+  	<h1 style="color: #fff;">Build the Vibe</h1>
+    <input class="form-control input-lg col-sm-8" id="seed" placeholder="Artist Track Album">	 
+	</div>
+  </div>
+  </div>
+</template>
+
+<template name="searchResults">
+	<div class="page search-results">
+		<div class="container" id="special">
+			<div class="search_res">
+				<div class="result_header">
+					<h3 id="results_title"></h3>
+					<span><a href="#" id="newSearch">back to search</a></span>
+					<hr>
+				</div>
+				<div id="all_results">
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="mini_player">
+	<div class="mini-player">
+		<div class="btn-group" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-backward"></span></button>
+		  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button>
+		  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-forward"></span></button>
+		</div>
+		<span>{{c_track}}</span>
+		<audio></audio>
+	</div>
+</template>
+
+<template name="artistDetails">
+	<div class="artist-page-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<div class="artist-page-header">
+						<div id="artist_image" class="artist-page-img-wrap"></div>
+						<div id="artist_name_header"></div>
+						<div class="btn-group" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">Play</button>
+						  <button type="button" class="btn btn-default">Artist Playlist</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-7 artist-page-main">
+				<div class="row">
+					<div class="col-sm-12" id="popular_tracks">
+						<h4>Top Tracks</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12" id="artist_albums">
+					<h3>Albums</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 col-md-offset-1 artist-page-main" id="related_artists">
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="album_details">
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div>{{img}}</div>
+		</div>
+		<div class="col-sm-6 col-md-4">
+			<!--<ul>{{#each albumTracks}}</ul>-->
+		</div>
+	</div>
+</template>
